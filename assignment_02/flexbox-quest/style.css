@@ -1,0 +1,625 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+
+    background-color: #dff3ff;
+    color: #222;
+
+    font-family: Arial, sans-serif;
+
+    /* Prevent unwanted horizontal scrolling */
+    width: 100%;
+}
+
+
+/* ==================================================
+   DISPLAY PROPERTY EXPERIMENT
+   ================================================== */
+
+.display-demo {
+    display: block;
+
+    background-color: white;
+
+    padding: 15px;
+    margin-bottom: 20px;
+
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.display-demo h2 {
+    margin-top: 0;
+}
+
+
+/* Demonstrates display: block */
+
+.box {
+    display: block;
+
+    background-color: lightblue;
+
+    padding: 10px;
+    margin: 5px 0;
+}
+
+
+/* Demonstrates display: inline */
+
+.demo-item {
+    display: inline;
+
+    background-color: lightgreen;
+
+    padding: 5px;
+}
+
+
+/* Demonstrates display: inline-block */
+
+.display-demo a {
+    display: inline-block;
+
+    background-color: lightyellow;
+
+    padding: 8px;
+    margin: 5px;
+
+    color: black;
+}
+
+
+/* ==================================================
+   GAME HEADER
+   ================================================== */
+
+.game-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    background-color: #172554;
+    color: white;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    border: 2px solid #0f172a;
+    border-radius: 10px;
+}
+
+
+.game-header h1 {
+    font-size: 28px;
+
+    margin: 0;
+}
+
+
+.game-info {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+
+.header-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* ==================================================
+   BUTTONS
+   ================================================== */
+
+button {
+    background-color: #facc15;
+    color: #222;
+
+    padding: 10px 15px;
+
+    border: 2px solid #222;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+
+/* ==================================================
+   MAIN
+   ================================================== */
+
+main {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    width: 100%;
+}
+
+
+/* ==================================================
+   GAME AREA
+   ================================================== */
+
+.game-area {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    width: 100%;
+    min-height: 400px;
+
+    background-color: #7dd3fc;
+
+    padding: 25px;
+
+    border: 3px solid #172554;
+    border-radius: 10px;
+}
+
+
+.game-area h2 {
+    font-size: 28px;
+
+    margin: 0;
+}
+
+
+.game-message {
+    background-color: white;
+
+    padding: 10px 20px;
+
+    border: 2px solid #172554;
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+
+/* Each row inside the game */
+
+.game-row {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 80px;
+
+    width: 100%;
+}
+
+
+/* PLAYER */
+
+.player {
+    background-color: #ef4444;
+    color: white;
+
+    padding: 20px;
+
+    border: 2px solid #991b1b;
+    border-radius: 8px;
+}
+
+
+/* STAR */
+
+.star {
+    background-color: #fde047;
+    color: #713f12;
+
+    padding: 15px;
+
+    border: 2px solid #a16207;
+    border-radius: 8px;
+}
+
+
+/* PLATFORM */
+
+.platform {
+    width: 180px;
+    height: 50px;
+
+    background-color: #16a34a;
+    color: white;
+
+    padding: 10px;
+
+    border: 2px solid #14532d;
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+
+/* ==================================================
+   GAME PANELS
+   ================================================== */
+
+.game-panels {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: stretch;
+
+    gap: 20px;
+
+    width: 100%;
+}
+
+
+/* All three panels */
+
+.panel {
+    flex: 1;
+
+    /* Allows flex items to shrink properly */
+    min-width: 0;
+
+    background-color: #1e293b;
+    color: white;
+
+    padding: 20px;
+    margin: 0;
+
+    border: 2px solid #0f172a;
+    border-radius: 10px;
+}
+
+
+.panel h2 {
+    text-align: center;
+
+    margin-top: 0;
+}
+
+
+/* ==================================================
+   CONTROLS
+   ================================================== */
+
+.controls {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.control-row {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* ==================================================
+   INVENTORY
+   ================================================== */
+
+.inventory-items {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+.inventory-item {
+    background-color: #475569;
+
+    padding: 15px;
+
+    border: 2px solid #94a3b8;
+    border-radius: 8px;
+}
+
+
+/* ==================================================
+   QUEST
+   ================================================== */
+
+.quest {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.quest-item {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+
+    background-color: #475569;
+
+    padding: 12px;
+    margin: 5px 0;
+
+    border: 1px solid #94a3b8;
+    border-radius: 8px;
+}
+
+
+.quest-item span:first-child {
+    flex: 1;
+}
+
+
+.quest-item span:last-child {
+    white-space: nowrap;
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+footer {
+    display: block;
+
+    background-color: #172554;
+    color: white;
+
+    padding: 15px;
+
+    margin-top: 20px;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+
+footer p {
+    margin: 0;
+}
+
+
+/* ==================================================
+   TABLET / SMALL SCREEN
+   ================================================== */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+
+    /* Header becomes vertical */
+
+    .game-header {
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        gap: 15px;
+    }
+
+
+    .game-info {
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    /* REQUIRED:
+       Panels change from row to column */
+
+    .game-panels {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .panel {
+        width: 100%;
+
+        padding: 15px;
+    }
+
+
+    .game-area {
+        padding: 20px;
+
+        min-height: 350px;
+    }
+
+
+    .game-row {
+        gap: 30px;
+    }
+
+
+    .platform {
+        width: 150px;
+    }
+}
+
+
+/* ==================================================
+   MOBILE
+   ================================================== */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 8px;
+    }
+
+
+    /* Smaller title */
+
+    .game-header h1 {
+        font-size: 24px;
+    }
+
+
+    /* Game information wraps cleanly */
+
+    .game-info {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+
+    .header-actions {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    /* Game area */
+
+    .game-area {
+        padding: 15px;
+
+        gap: 15px;
+
+        min-height: 320px;
+    }
+
+
+    .game-area h2 {
+        font-size: 24px;
+    }
+
+
+    .game-message {
+        width: 100%;
+
+        padding: 8px;
+    }
+
+
+    .game-row {
+        gap: 15px;
+    }
+
+
+    .platform {
+        width: 120px;
+        height: auto;
+
+        font-size: 13px;
+    }
+
+
+    .player {
+        padding: 15px;
+
+        font-size: 13px;
+    }
+
+
+    .star {
+        padding: 12px;
+
+        font-size: 13px;
+    }
+
+
+    /* Panels */
+
+    .panel {
+        width: 100%;
+
+        padding: 15px;
+    }
+
+
+    /* Inventory can wrap */
+
+    .inventory-items {
+        gap: 8px;
+    }
+
+
+    .inventory-item {
+        padding: 10px;
+    }
+
+
+    /* Quest stays readable */
+
+    .quest-item {
+        gap: 10px;
+
+        padding: 10px;
+
+        font-size: 14px;
+    }
+
+
+    /* Smaller buttons */
+
+    button {
+        padding: 8px 12px;
+
+        font-size: 14px;
+    }
+
+
+    /* Display demo */
+
+    .display-demo {
+        padding: 10px;
+    }
+}
