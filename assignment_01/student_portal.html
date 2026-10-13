@@ -1,13 +1,18 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
     <title>Student Portal</title>
 
     <style>
-        /* Element selectors */
+
+        /* Element Selectors */
+
         body {
             background-color: #f5f5f5;
+            color: #222222;
         }
 
         h1 {
@@ -18,26 +23,38 @@
             color: darkgreen;
         }
 
-        /* Class selector */
+
+        /* Class Selector */
+
         .highlight {
             color: green;
         }
 
-        .badge {
-            color: white;
-            background-color: darkgreen;
-        }
 
-        /* ID selector */
+        /* ID Selector */
+
         #student-name {
             color: blue;
         }
+
+
+        /* Bonus Challenge */
+
+        .badge {
+            color: white;
+            background-color: green;
+        }
+
     </style>
 </head>
 
+
 <body>
 
+    <!-- Header -->
+
     <header>
+
         <h1>Student Portal</h1>
 
         <nav>
@@ -46,20 +63,27 @@
             <a href="#courses">Courses</a>
             <a href="#register">Register</a>
         </nav>
+
     </header>
+
+
+    <!-- Main Content -->
 
     <main>
 
         <!-- Student Profile -->
+
         <section id="profile">
+
             <h2>Student Profile</h2>
 
             <h3 id="student-name">
-                Rahul Sharma
+                Gopesh Pandey
                 <span class="badge">Top Performer</span>
             </h3>
 
             <table border="1">
+
                 <tr>
                     <th>Field</th>
                     <th>Value</th>
@@ -67,12 +91,12 @@
 
                 <tr>
                     <td>Name</td>
-                    <td>Rahul Sharma</td>
+                    <td>Gopesh Pandey</td>
                 </tr>
 
                 <tr>
-                    <td>Student ID</td>
-                    <td>24BCE1001</td>
+                    <td>Roll No</td>
+                    <td>26BCS10802</td>
                 </tr>
 
                 <tr>
@@ -87,14 +111,18 @@
 
                 <tr>
                     <td>Email</td>
-                    <td>rahul@example.com</td>
+                    <td>gopesh.26bcs10802@sst.scaler.com</td>
                 </tr>
+
             </table>
+
         </section>
 
 
         <!-- My Skills -->
+
         <section>
+
             <h2>My Skills</h2>
 
             <ul>
@@ -104,14 +132,18 @@
                 <li>Python</li>
                 <li>Git</li>
             </ul>
+
         </section>
 
 
         <!-- Weekly Schedule -->
+
         <section id="courses">
+
             <h2>Weekly Schedule</h2>
 
             <table border="1">
+
                 <tr>
                     <th>Day</th>
                     <th>9:00 AM</th>
@@ -153,15 +185,21 @@
                     <td>CSS</td>
                     <td>Workshop</td>
                 </tr>
+
             </table>
+
         </section>
 
 
         <!-- Course Registration -->
+
         <section id="register">
+
             <h2>Course Registration</h2>
 
             <form>
+
+                <!-- Student Information -->
 
                 <h3>Student Information</h3>
 
@@ -175,74 +213,133 @@
 
                 <br><br>
 
-                <label for="student-id">Student ID:</label>
-                <input type="text" id="student-id" name="student-id">
+                <label for="roll-no">Roll No:</label>
+                <input type="text" id="roll-no" name="roll-no">
 
                 <br><br>
 
 
+                <!-- Course Selection -->
+
                 <h3>Course Selection</h3>
 
-                <label for="course">Choose a course:</label>
+                <label for="course">Select Course:</label>
 
                 <select id="course" name="course">
+
                     <option value="">Select Course</option>
-                    <option value="html-css">HTML &amp; CSS</option>
-                    <option value="javascript">JavaScript</option>
-                    <option value="python">Python</option>
-                    <option value="data-structures">Data Structures</option>
-                    <option value="database-management">Database Management</option>
+
+                    <option value="html-css">
+                        HTML &amp; CSS
+                    </option>
+
+                    <option value="javascript">
+                        JavaScript
+                    </option>
+
+                    <option value="python">
+                        Python
+                    </option>
+
+                    <option value="data-structures">
+                        Data Structures
+                    </option>
+
+                    <option value="database-management">
+                        Database Management
+                    </option>
+
                 </select>
 
                 <br><br>
 
 
+                <!-- Preferred Learning Mode -->
+
                 <h3>Preferred Learning Mode</h3>
 
-                <input type="radio" id="online" name="learning-mode" value="online">
+                <input
+                    type="radio"
+                    id="online"
+                    name="learning-mode"
+                    value="online"
+                >
                 <label for="online">Online</label>
 
-                <input type="radio" id="offline" name="learning-mode" value="offline">
+                <input
+                    type="radio"
+                    id="offline"
+                    name="learning-mode"
+                    value="offline"
+                >
                 <label for="offline">Offline</label>
 
                 <br><br>
 
 
+                <!-- Skills Already Known -->
+
                 <h3>Skills You Already Know</h3>
 
-                <input type="checkbox" id="html" name="skills" value="html">
+                <input
+                    type="checkbox"
+                    id="html"
+                    name="skills"
+                    value="html"
+                >
                 <label for="html">HTML</label>
 
                 <br>
 
-                <input type="checkbox" id="css" name="skills" value="css">
+                <input
+                    type="checkbox"
+                    id="css"
+                    name="skills"
+                    value="css"
+                >
                 <label for="css">CSS</label>
 
                 <br>
 
-                <input type="checkbox" id="javascript" name="skills" value="javascript">
+                <input
+                    type="checkbox"
+                    id="javascript"
+                    name="skills"
+                    value="javascript"
+                >
                 <label for="javascript">JavaScript</label>
 
                 <br>
 
-                <input type="checkbox" id="python" name="skills" value="python">
+                <input
+                    type="checkbox"
+                    id="python"
+                    name="skills"
+                    value="python"
+                >
                 <label for="python">Python</label>
 
                 <br><br>
 
 
+                <!-- Form Buttons -->
+
                 <input type="submit" value="Submit">
                 <input type="reset" value="Reset">
 
             </form>
+
         </section>
 
     </main>
 
+
+    <!-- Footer -->
 
     <footer>
         <p>Student Portal</p>
     </footer>
 
 </body>
+
 </html>
